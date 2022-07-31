@@ -1,0 +1,60 @@
+#§ {
+    background-color: black;
+    width: 45vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#open {
+    width: 7vh;
+    height: 7vh;
+    background-color: #0000;
+    font-size: 40px;
+    color: gold;
+    border-radius: 100%;
+    line-height: 0%;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+#open:hover {
+    animation: infinite 1s open;
+}
+#exit {
+    color: white;
+    float: right;
+    margin-top: 2vh;
+    margin-right: 3vh;
+    font-family:monospace;
+    font-size: 30px;
+    margin-left: 90%;
+}
+#exit:hover {
+    color: goldenrod;
+}
+.sb {
+    color: white;
+    font-size: 20px;
+    margin-left: 2vh;
+    margin-bottom: 2px;
+    line-height: 15px;
+}
+.sb:hover {
+    color: goldenrod;
+}
+@media only screen and (max-width: 400px) {
+    #§ {
+        width: 100%;
+    }
+    #open {
+        font-size: 30px;
+    }
+}
+@keyframes open {
+    0% {}
+    50% {margin-bottom: 0.5vh;}
+    100% {}
+}
