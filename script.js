@@ -11,7 +11,7 @@ body.appendChild(selection);
 const opse = document.createElement("button");
 opse.id = "open";
 opse.innerHTML="&#9776;";
-body.appendChild(opse);
+document.getElementById("bannertext").appendChild(opse);
 const exit = document.createElement("h1");
 exit.id="exit";
 exit.innerText="X";
