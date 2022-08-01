@@ -66,3 +66,27 @@ function open() {
     selection.style.display="block";
     opse.style.display="none";
 }
+b1.onclick = function () {
+    document.location.href="/index.html";
+}
+b2.onclick = function () {
+    document.location.href="/Tietoa-pelistä.html";
+}
+b3.onclick = function () {
+    document.location.href="/Tietoa-kirjasta.html";
+}
+b4.onclick = function () {
+    document.location.href="/minecraft-server.html";
+}
+b5.onclick = function () {
+    document.location.href="/youtube-kanava.html";
+}
+b6.onclick = function () {
+    document.location.href="/discord-server.html";
+}
+b7.onclick = function () {
+    document.location.href="/clan-liittyminen.html";
+}
+b8.onclick = function () {
+    document.location.href="/muuta-densokasta.html";
+}

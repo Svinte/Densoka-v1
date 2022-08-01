@@ -1,7 +1,7 @@
 #§ {
     background-color: black;
     width: 45vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
