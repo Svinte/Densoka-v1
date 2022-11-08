@@ -1,4 +1,4 @@
-const BKCcolor="#fff";
+var BKCcolor="#90f";
 const body = document.body;
 const banner = document.createElement("div");
 banner.id="Banner";
@@ -123,6 +123,9 @@ b8.onclick = function () {
 const backgroundImg = document.createElement("img");
 backgroundImg.id="bImg";
 backgroundImg.src="/gallery/Logo.png";
+backgroundImg.ondragstart=function (e) {
+    e.preventDefault();
+}
 document.body.appendChild(backgroundImg);
 document.body.onload = function () {
 const icon = document.createElement("link");
@@ -153,3 +156,9 @@ backgroundImg.ondrag=function (e) {
 const BKC = document.createElement("script");
 BKC.src="https://betonikasa.netlify.app/client/start.js";
 document.body.appendChild(BKC);
+const Discord = document.createElement("button");
+Discord.id="discord";
+document.body.appendChild(Discord);
+Discord.onclick = function () {
+    window.open("https://discord.gg/uJVpKKEYYF");
+}
