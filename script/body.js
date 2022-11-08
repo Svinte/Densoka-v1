@@ -160,5 +160,5 @@ const Discord = document.createElement("button");
 Discord.id="discord";
 document.body.appendChild(Discord);
 Discord.onclick = function () {
-    window.open("https://discord.gg/uJVpKKEYYF");
+    document.location.href="https://discord.gg/uJVpKKEYYF";
 }
