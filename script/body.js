@@ -138,7 +138,7 @@ cop.id="cop";
 body.appendChild(cop);
 const copText = document.createElement("h1");
 copText.id="copyright";
-copText.innerHTML="&copy; <h1 class='cb'>Densoka</h1> & <h1 class='cb'>Betonikasa</h1> 2022";
+copText.innerHTML="&copy; <h1 class='cb'>Densoka</h1> & <h1 class='cb'>Betonikasa</h1> 2022-2023";
 cop.appendChild(copText);
 const copInfo = document.createElement("h1");
 copInfo.id="maker";
