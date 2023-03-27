@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="https://betonikasa.netlify.app/gallery/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="border">
+            <div id="chat"></div>
+            <div>
+                <input type="text" placeholder="Send message" id="input"><button id="send">Send</button>
+            </div>
+        </div>
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+            import { getDatabase, ref, get, child, set, onValue, push, update } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
+            const firebaseConfig = {
+                apiKey: "AIzaSyDGUJ4DGYafRbekySYLt3-FDuoBNc6qQY4",
+                authDomain: "betonikasa-0.firebaseapp.com",
+                databaseURL: "https://betonikasa-0-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "betonikasa-0",
+                storageBucket: "betonikasa-0.appspot.com",
+                messagingSenderId: "849959643717",
+                appId: "1:849959643717:web:65a1e9b1516a2e2369112c",
+                measurementId: "G-E6RKSE6W4F"
+            };
+            const app = initializeApp(firebaseConfig);
+            const db = getDatabase(app);
+            const dbRef = ref(getDatabase());
+            //function zone
+            function main() {
+                const chat = document.getElementById("chat");
+                document.getElementById("border").insertBefore(document.getElementById("border").querySelector("div"), chat);
+                const message = document.createElement("div");
+                const message_value = document.createElement("h1");
+                message_value.className="value";
+                get(child(dbRef, `values`)).then((snapshot) => {
+                    if (snapshot.exists()) {
+                        var messages = snapshot.val();
+                    }   else {
+                        var messages = {"-Server": "Viestit alkavat tästä"};
+                    }
+                    Object.values(messages).forEach(element => {
+                        const message_value = document.createElement("h1");
+                        message_value.className="value";
+                        message_value.innerHTML=element.message;
+                        const message_profile = document.createElement("h1");
+                        message_profile.className="profile";
+                        message_profile.innerHTML=element.user;
+                        chat.appendChild(message_profile);
+                        chat.appendChild(message_value);
+                    });
+                });
+            }
+            main();
+            function send(user, message) {
+                const date = new Date();
+                const data = {
+                    user: user,
+                    message: message,
+                    time: [date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes()]
+                }
+                push(ref(db, "values/"), data);
+            };
+            document.getElementById("send").onclick = function () {
+                const user = "user";
+                const value = document.getElementById("input").value;
+                send(user, value);
+                document.getElementById("input").value = null;
+            };
+        </script>
+    </body>
+</html>
+<style>
+body {
+    margin: 0;
+}
+#chat {
+    width: 100%;
+    height: 80vh;
+    margin-top: 5vh;
+    padding: 20px;
+}
+#border {
+    width: 80vw;
+    background-color: black;
+    margin: auto;
+    display: block;
+}
+#input {
+    width: calc(100% - 40px);
+    height: 40px;
+    display: inline;
+    box-sizing: border-box;
+    outline: none;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    padding-left: 10px;
+    color: white;
+}
+#send {
+    border: none;
+    width: 40px;
+    height: 42px;
+    font-size: 10px;
+    display: inline;
+    color: white;
+    background-color: rgb(51, 51, 51);
+}
+.value {
+    color: white;
+    margin: 10px 0 20px 20px;
+    font-size: 15px;
+    font-family: arial;
+}
+.profile {
+    color: white;
+    margin: 0 0 0 0;
+    font-size: 17px;
+    font-family: arial;
+}
+</style>
