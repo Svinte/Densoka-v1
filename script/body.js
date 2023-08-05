@@ -29,7 +29,7 @@ const b7 = document.createElement("h1");
 b7.innerText="Clan liittyminen";
 b7.className="sb";
 const b8 = document.createElement("h1");
-b8.innerText="muuta densokasta";
+b8.innerText="Muuta";
 b8.className="sb";
 document.head.appendChild(style);
 if (window.innerWidth<800) {
