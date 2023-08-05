@@ -31,9 +31,6 @@ b7.className="sb";
 const b8 = document.createElement("h1");
 b8.innerText="muuta densokasta";
 b8.className="sb";
-const b9 = document.createElement("h1");
-b9.innerText="beta chat";
-b9.className="sb";
 document.head.appendChild(style);
 if (window.innerWidth<800) {
     const bannertext = document.createElement("h1");
@@ -60,7 +57,6 @@ if (window.innerWidth<800) {
     selection.appendChild(b6);
     selection.appendChild(b7);
     selection.appendChild(b8);
-    selection.appendChild(b9);
     document.getElementById("exit").onclick = close;
     document.getElementById("open").onclick = open;
     document.onkeyup = function (p) {
@@ -87,7 +83,6 @@ if (window.innerWidth<800) {
     banner.appendChild(b6);
     banner.appendChild(b7);
     banner.appendChild(b8);
-    banner.appendChild(b9);
     var index=0;
     function forEach() {
         if (document.getElementsByClassName("sb")[index]) {
@@ -124,9 +119,6 @@ b7.onclick = function () {
 }
 b8.onclick = function () {
     document.location.href="/muuta.html";
-}
-b9.onclick = function () {
-    document.location.href="/chat.html";
 }
 const backgroundImg = document.createElement("img");
 backgroundImg.id="bImg";
