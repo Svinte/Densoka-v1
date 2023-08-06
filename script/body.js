@@ -102,9 +102,6 @@ b5.onclick = function () {
     document.location.href="/discord.html";
 }
 b6.onclick = function () {
-    document.location.href="/clan.html";
-}
-b7.onclick = function () {
     document.location.href="/muuta.html";
 }
 const backgroundImg = document.createElement("img");
