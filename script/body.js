@@ -14,21 +14,18 @@ const b2 = document.createElement("h1");
 b2.innerText="Tietoa pelistä";
 b2.className="sb";
 const b3 = document.createElement("h1");
-b3.innerText="Tietoa kirjasta";
-b3.className="sb";
-const b4 = document.createElement("h1");
 b4.innerText="Minecraft server";
 b4.className="sb";
-const b5 = document.createElement("h1");
+const b4 = document.createElement("h1");
 b5.innerText="Youtube kanava";
 b5.className="sb";
-const b6 = document.createElement("h1");
+const b5 = document.createElement("h1");
 b6.innerText="Discord server";
 b6.className="sb";
-const b7 = document.createElement("h1");
+const b6 = document.createElement("h1");
 b7.innerText="Clan liittyminen";
 b7.className="sb";
-const b8 = document.createElement("h1");
+const b7 = document.createElement("h1");
 b8.innerText="Muuta";
 b8.className="sb";
 document.head.appendChild(style);
@@ -56,7 +53,6 @@ if (window.innerWidth<800) {
     selection.appendChild(b5);
     selection.appendChild(b6);
     selection.appendChild(b7);
-    selection.appendChild(b8);
     document.getElementById("exit").onclick = close;
     document.getElementById("open").onclick = open;
     document.onkeyup = function (p) {
@@ -82,7 +78,6 @@ if (window.innerWidth<800) {
     banner.appendChild(b5);
     banner.appendChild(b6);
     banner.appendChild(b7);
-    banner.appendChild(b8);
     var index=0;
     function forEach() {
         if (document.getElementsByClassName("sb")[index]) {
@@ -103,21 +98,18 @@ b2.onclick = function () {
     document.location.href="/peli.html";
 }
 b3.onclick = function () {
-    document.location.href="/kirja.html";
-}
-b4.onclick = function () {
     document.location.href="/minecraft palvelin.html";
 }
-b5.onclick = function () {
+b4.onclick = function () {
     document.location.href="/youtube.html";
 }
-b6.onclick = function () {
+b5.onclick = function () {
     document.location.href="/discord.html";
 }
-b7.onclick = function () {
+b6.onclick = function () {
     document.location.href="/clan.html";
 }
-b8.onclick = function () {
+b7.onclick = function () {
     document.location.href="/muuta.html";
 }
 const backgroundImg = document.createElement("img");
