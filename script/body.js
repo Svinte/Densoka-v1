@@ -1,5 +1,4 @@
 var BKCcolor="#90f";
-<marquee behavior="scroll" direction="right"><h1>Tervetuloa Densokan kotisivuille.</h1>
 const body = document.body;
 const banner = document.createElement("div");
 banner.id="Banner";
