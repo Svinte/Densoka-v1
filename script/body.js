@@ -26,6 +26,7 @@ const b6 = document.createElement("h1");
 b6.innerText="Muuta";
 b6.className="sb";
 document.head.appendChild(style);
+<marquee behavior="scroll" direction "right"><h1>Tervetuloa Densokan kotisivuille.</h1>
 if (window.innerWidth<800) {
     const bannertext = document.createElement("h1");
     bannertext.id="bannerText";
