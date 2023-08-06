@@ -23,11 +23,8 @@ const b5 = document.createElement("h1");
 b5.innerText="Discord server";
 b5.className="sb";
 const b6 = document.createElement("h1");
-b6.innerText="Clan liittyminen";
+b6.innerText="Muuta";
 b6.className="sb";
-const b7 = document.createElement("h1");
-b7.innerText="Muuta";
-b7.className="sb";
 document.head.appendChild(style);
 if (window.innerWidth<800) {
     const bannertext = document.createElement("h1");
@@ -52,7 +49,6 @@ if (window.innerWidth<800) {
     selection.appendChild(b4);
     selection.appendChild(b5);
     selection.appendChild(b6);
-    selection.appendChild(b7);
     document.getElementById("exit").onclick = close;
     document.getElementById("open").onclick = open;
     document.onkeyup = function (p) {
@@ -77,7 +73,6 @@ if (window.innerWidth<800) {
     banner.appendChild(b4);
     banner.appendChild(b5);
     banner.appendChild(b6);
-    banner.appendChild(b7);
     var index=0;
     function forEach() {
         if (document.getElementsByClassName("sb")[index]) {
