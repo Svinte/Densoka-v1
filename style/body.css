@@ -41,24 +41,6 @@ body {
 #exit:hover {
     color: rgb(255, 0, 255);
 }
-{
-margin: 0;
-box-siziring: border-box;
-font-family: `Roboto , sans-serif;
-}
-
-.text.wrapper {
-display: flex;
-justicy-content: flex-start;
-overflow: hidden;
-}
-@keyframes move-rt1 {
-           0% {
-                   tranform: translateX(0);
-           }
-           100% {
-                    transform: translateX(100%);
-
 .sb {
     color: white;
     font-size: 20px;
