@@ -52,18 +52,6 @@ display: flex;
 justicy-content: flex-start;
 overflow: hidden;
 }
-h1 {
-font-size: 48px;
-text-transform: uppercase;
-color: black;
--webkit-test-stroke-width: 0.1;
--webkit-test-stroke-color: #fff;
-text-stroke-color: #fff;
-white-space: nowrap;
-padding: 0 6rem;
-letter-spacing: 1px;
-animation: move rt1 6000ms linear infinite;
-}
 @keyframes move-rt1 {
            0% {
                    tranform: translateX(0);
