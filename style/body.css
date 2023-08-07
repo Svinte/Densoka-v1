@@ -188,4 +188,3 @@ animation: move rt1 6000ms linear infinite;
            }
            100% {
                     transform: translateX(100%);
-    }
