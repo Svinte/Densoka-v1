@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koti</title>
-    <meta name="description" content="Welcome to Densoka's website. Densoka is a discord server which is goming to have a game and a youtube channel. Tervetuloa Densokan sivuille. Densoka on discord-palvelin, jolle on tulossa peli ja youtube kanava.">
+    <meta name="description" content="Tervetuloa Densokaan">
 </head>
     <body>
     <script src="/script/body.js"></script>
+    <h1 class="welcome">Tervetuloa Densokan Kotisivuille</h1>
+    <h1 class="welcome">Tervetuloa Densokan Kotisivuille</h1>
+    <h1 class="welcome">Tervetuloa Densokan Kotisivuille</h1>
+    <h1 class="welcome">Tervetuloa Densokan Kotisivuille</h1>
+    <h1 class="welcome">Tervetuloa Densokan Kotisivuille</h1>
     <h1 class="t">Tervetuloa Densokan kotisivuille. Täältä saat tietää Densokasta ja sen projekteista. Voit lukea lisää projekteistamme yläpalkin vaihtoehdoista.</h1>
     <h1 class="o">Keitä olemme?</h1>
     <h1 class="t">Densoka on vuonna 2022 perustettu Discord palvelin, joka on jo ensimmäisen vuotensa aikana saanut yli 200 jäsentä. Densokan tavoite on bannerissa mainittujen projektien lisäksi tarjota mukava juttelupaikka, joka ei jätä ketään kylmäksi.</h1>
@@ -16,10 +21,44 @@
     <h1 class="t">Haluamme ylläpitää palvelimella hyvää ilmapiiriä, jonka takia emme hyväksy minkäänlaista rasismia tai kiusaamista. Palvelimellamme kaikki ovat tasa-arvoisia eikä ketään syrjitä. Myöskin ylläpito noudattaa tätä periaatetta, eikä palvelimellamme kenelläkään ole erikoissoikeuksia. Kuuuntelemme ja kohtelemme kaikkia jäseniä yksilöinä, emmekä tuomitse ketään.</h1>
     <h1 class="o">Palaute</h1>
     <h1 class="t">Meille Densokassa on tärkeää jäsenten kuunteleminen ja ideoiden toteuttaminen. Yritämme luoda parhaan mahdollisen kokemuksen jäsenillemme, jossa voit auttaa meitä vastaamalla <a href="https://docs.google.com/forms/d/e/1FAIpQLScvc1DnoJh1-J2KrVS7mFF1pEz2aACaGQh7fKBaqWJdtST-Xw/viewform?usp=sf_link">Palautekyselyyn</a>.</h1>
-    </div>
 </body>
 </html>
 <style>
+body {
+    overflow-x: hidden;
+}
+.welcome {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px purple, -1px 1px 2px purple, -1px -1px 2px purple, 1px -1px 2px purple;
+    animation: 12s infinite linear loop;
+    position: absolute;
+    width: max-content;
+    margin-top: -7rem;
+    margin-left: -100%;
+    font-style: oblique;
+}
+.welcome:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.welcome:nth-of-type(2) {
+    animation-delay: 2.5s;
+}
+.welcome:nth-of-type(3) {
+    animation-delay: 5s;
+}
+.welcome:nth-of-type(4) {
+    animation-delay: 7.5s;
+}
+.welcome:nth-of-type(5) {
+    animation-delay: 10s;
+}
+@keyframes loop {
+    0% {margin-left: calc(-3000px + 100vw);}
+    100% {margin-left: 100%;}
+}
+img {
+    margin-bottom: 10rem;
+}
 a {
     text-align: center;
     color: purple;

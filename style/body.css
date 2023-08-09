@@ -47,10 +47,18 @@ body {
     margin-left: 2vh;
     margin-bottom: 2px;
     line-height: 15px;
-    
+    padding-left: 20px;
 }
 .sb:hover {
     color: rgb(200, 0, 200);
+}
+.sb:last-child {
+    margin-bottom: 3vh;
+}
+@media screen and (max-width: 130vh){
+    .sb:first-child {
+        border-left: 2px solid white !important;
+    }
 }
 @media only screen and (max-width: 400px) {
     #§ {
@@ -70,6 +78,7 @@ body {
     background-color: #2f0042;
     height: 10vh;
     border-bottom: 2px #fff9 dotted;
+    height: auto;
 }
 #bannerText {
     text-align: center;
@@ -157,3 +166,4 @@ body {
     80% {bottom: 120px;}
     90% {bottom: 130px;}
     100% {bottom: 120px;}
+}

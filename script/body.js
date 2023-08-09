@@ -78,7 +78,7 @@ if (window.innerWidth<800) {
         if (document.getElementsByClassName("sb")[index]) {
             document.getElementsByClassName("sb")[index].style="display: inline-table; margin-top: 4vh;";
             if (index !== 0) {
-                document.getElementsByClassName("sb")[index].style.borderLeft="2px solid black";
+                document.getElementsByClassName("sb")[index].style.borderLeft="2px solid white";
             }
             index++;
             forEach();
